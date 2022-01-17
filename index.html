@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pemesanan Tiket Makmum 2</title>
+  </head>
+  <body>
+
+    <div class="gambar">
+      <h1>MAKMUM 2</h1>
+      <img src="1.jpg">
+      <p>Harga Tiket Rp. 50.000</p>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Tersedia</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Dipilih</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Telah Dipesan</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen">
+        <h1>Layar</h1>
+      </div>
+      <div class="row">
+        <div class="kursi">A</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat occupied" onClick="alert('Seat A3 sudah terisi. Silakan pilih seat lainnya.')">3</div>
+        <div class="seat occupied" onClick="alert('Seat A4 sudah terisi. Silakan pilih seat lainnya.')">4</div>
+        <div class="seat occupied" onClick="alert('Seat A5 sudah terisi. Silakan pilih seat lainnya.')">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">B</div>
+        <div class="seat">1</div>
+        <div class="seat occupied" onClick="alert('Seat B2 sudah terisi. Silakan pilih seat lainnya.')">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">C</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat occupied" onClick="alert('Seat C4 sudah terisi. Silakan pilih seat lainnya.')">4</div>
+        <div class="seat occupied" onClick="alert('Seat C5 sudah terisi. Silakan pilih seat lainnya.')">5</div>
+        <div class="seat">6</div>
+
+    </div>
+    <div class="row">
+        <div class="kursi">D</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat occupied" onClick="alert('Seat D4 sudah terisi. Silakan pilih seat lainnya.')">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">E</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">F</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">G</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+        <div class="kursi">H</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+    </div>
+    <div class="row">
+      <div class="kursi">I</div>
+      <div class="seat">1</div>
+      <div class="seat">2</div>
+      <div class="seat">3</div>
+      <div class="seat">4</div>
+      <div class="seat">5</div>
+      <div class="seat">6</div>
+  </div>
+    </div>
+    <p class="text">
+      Anda telah memilih kursi dengan jumlah <span id="count">0</span> dengan harga + Rp. 1000/Tiket (jasa aplikasi) <br>
+      Sehingga total pesanan Anda Rp. <span id="total">0</span> 
+    </p>
+
+    <div class="btn">
+    <input class="tombol" type="button" onclick="book()" value="Konfirmasi Pesanan">
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+

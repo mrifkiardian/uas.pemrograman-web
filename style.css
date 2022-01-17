@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222138;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'poppins', 'sans-serif';
+}
+
+.gambar{
+  margin-top: 50%;
+  padding-top: 30%;
+}
+
+.gambar h1{
+  font-size: 30px;
+ justify-content: center;
+ text-align: center;
+}
+.gambar p{
+  text-align: center;
+}
+
+.gambar img{
+  width: 200px;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top:1px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.kursi {
+  background-color: #444451;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top:1px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.kursi:nth-of-type(1) {
+  margin-right: 22px;
+}
+.seat.selected {
+  background-color:#10d610; /*kursi dipilih*/
+}
+
+.seat.occupied {
+  background-color: #2e10d6;
+  cursor: pointer;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  background-color:#10d610; /*kursi pointer*/
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1.1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: cyan;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  
+}
+.screen h1 {
+  transform: rotateX(-45deg);
+  font-family: cambria;
+  color:#242333;
+  text-align:center;
+  margin:auto;
+}
+p.text {
+  margin: 5px 0;
+  text-align: center;
+}
+
+p.text span {
+  color: #a36ff6;
+}
+
+.tombol{
+  width:250px;
+  height:45px;
+  border:none;
+  outline:none;
+  margin-bottom: 20px;
+  margin-top:20px;
+  color:#fff;
+  font-size:14px;
+  background-color:#5882FA;
+  border-radius:5px;
+  font-weight:700
+  }
+  .tombol:hover{
+  background-color:#10d610;
+  cursor:pointer
+  }
+  .tombol:active{
+  background-color:#10d610;
+  padding-top:2px;
+  box-shadow:none
+  }
+  
